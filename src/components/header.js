@@ -40,6 +40,7 @@ render(){
         <header>
         <div className = "logo" onClick={()=>console.log('LOGO clicked')}>LOGO</div>    
        <input onChange={this.inputChange.bind(this)}/>
+
        <div>{this.state.title}</div>
        <div>{this.state.keywords}</div>
     </header>
