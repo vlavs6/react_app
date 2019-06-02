@@ -29,7 +29,7 @@ constructor(props){
         console.log("News filter key:",keywords)
 
         let filtered = this.state.news.filter((item)=>{
-            return item.title.indexOf(keywords.toUpperCase()|| keywords.toLowerCase()) > -1
+            return item.title.toLowerCase().indexOf(keywords.toLowerCase()) > -1
         })
 
         this.setState({filteredNews:filtered});
